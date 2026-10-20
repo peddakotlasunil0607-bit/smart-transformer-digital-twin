@@ -1,6 +1,10 @@
 
 Flask
 numpy
+pandas
 scikit-learn
+xgboost
 joblib
 gunicorn
+matplotlib
+requests

@@ -1,0 +1,1002 @@
+[
+  {
+    "timestamp": "2026-10-20T14:15:03+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 82.2,
+    "num_users": 35,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T14:14:53+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 112.6,
+    "num_users": 98,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T14:14:43+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 99.5,
+    "num_users": 119,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T14:14:33+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 91.9,
+    "num_users": 57,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T14:14:23+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 75.7,
+    "num_users": 67,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T14:14:13+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 64.3,
+    "num_users": 32,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T14:14:03+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 110.5,
+    "num_users": 109,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T14:13:53+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 97.1,
+    "num_users": 100,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T12:02:19+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 81.1,
+    "num_users": 59,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T12:02:17+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 112.5,
+    "num_users": 32,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T12:01:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 78,
+    "num_users": 24,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T12:00:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 81.7,
+    "num_users": 81,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:59:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 109.9,
+    "num_users": 97,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:58:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 99.1,
+    "num_users": 103,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:57:49+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 67.9,
+    "num_users": 31,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:57:39+05:30",
+    "failure_probability_percent": 2.5,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 78.2,
+    "num_users": 76,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:57:29+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 82.1,
+    "num_users": 101,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:57:19+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 104.3,
+    "num_users": 113,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:57:09+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 107.6,
+    "num_users": 100,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:56:59+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 66.5,
+    "num_users": 93,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:56:49+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 82.4,
+    "num_users": 72,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:56:39+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 89.8,
+    "num_users": 81,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:56:29+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 92.4,
+    "num_users": 20,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:56:19+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 111.7,
+    "num_users": 34,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:56:09+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 103.3,
+    "num_users": 73,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:55:59+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 82.6,
+    "num_users": 59,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:55:49+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 103.6,
+    "num_users": 73,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:55:39+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 71.7,
+    "num_users": 106,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:55:29+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 119,
+    "num_users": 57,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:55:19+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 117.4,
+    "num_users": 58,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:55:09+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 105.8,
+    "num_users": 73,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:54:59+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 107.9,
+    "num_users": 92,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:54:49+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 89.4,
+    "num_users": 42,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:54:39+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 71.4,
+    "num_users": 58,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:54:29+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 75.8,
+    "num_users": 73,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:54:19+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 81.4,
+    "num_users": 63,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:54:09+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 104.3,
+    "num_users": 78,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:53:59+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 78.2,
+    "num_users": 85,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:53:49+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 67.1,
+    "num_users": 92,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:53:39+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 97.1,
+    "num_users": 110,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:53:29+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 101.2,
+    "num_users": 55,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:53:19+05:30",
+    "failure_probability_percent": 3.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 95.7,
+    "num_users": 94,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:53:09+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 88.3,
+    "num_users": 79,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:52:59+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 63.5,
+    "num_users": 100,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:52:49+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 95.1,
+    "num_users": 62,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:52:39+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 102.8,
+    "num_users": 45,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:52:29+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 102.2,
+    "num_users": 69,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:52:19+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 67,
+    "num_users": 81,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:52:09+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 99.6,
+    "num_users": 109,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:51:43+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 106.2,
+    "num_users": 117,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:51:33+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 116.7,
+    "num_users": 42,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:51:23+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 102.9,
+    "num_users": 107,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:51:13+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 86.7,
+    "num_users": 39,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:51:03+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 89.5,
+    "num_users": 83,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:50:52+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 73.6,
+    "num_users": 24,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:50:43+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 90.4,
+    "num_users": 32,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:50:33+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 92.3,
+    "num_users": 53,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:50:23+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 95.6,
+    "num_users": 44,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:50:13+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 81.8,
+    "num_users": 45,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:50:03+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 96.9,
+    "num_users": 100,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:49:53+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 99.4,
+    "num_users": 47,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:49:43+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 80.9,
+    "num_users": 79,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:49:33+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 110.4,
+    "num_users": 54,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:49:23+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 114.5,
+    "num_users": 79,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:49:13+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 90,
+    "num_users": 118,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:49:02+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 77.9,
+    "num_users": 58,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:48:53+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 83,
+    "num_users": 108,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:45:50+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 66.5,
+    "num_users": 73,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:45:40+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 97.1,
+    "num_users": 57,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:45:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 108.8,
+    "num_users": 42,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:45:20+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 115.9,
+    "num_users": 114,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:45:10+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 86.8,
+    "num_users": 21,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:45:00+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 81.1,
+    "num_users": 75,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:44:50+05:30",
+    "failure_probability_percent": 1.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 77,
+    "num_users": 96,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:44:40+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 93.8,
+    "num_users": 67,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:44:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 111,
+    "num_users": 106,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:44:20+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 75.1,
+    "num_users": 105,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T11:18:01+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 67.3,
+    "num_users": 31,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:14:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 70.6,
+    "num_users": 51,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:13:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 119.1,
+    "num_users": 68,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:12:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 70.8,
+    "num_users": 78,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:11:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 114,
+    "num_users": 69,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:10:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 70.1,
+    "num_users": 55,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:09:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 86.6,
+    "num_users": 69,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:08:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 89.9,
+    "num_users": 117,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:07:30+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 96,
+    "num_users": 105,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:06:29+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 72.5,
+    "num_users": 48,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:05:28+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 102.3,
+    "num_users": 35,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:05:18+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 67.1,
+    "num_users": 33,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:05:08+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 111,
+    "num_users": 79,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:04:58+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 65.6,
+    "num_users": 81,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:04:48+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 76.1,
+    "num_users": 63,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:04:38+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 78.7,
+    "num_users": 69,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:04:28+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 106.9,
+    "num_users": 59,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:04:18+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 63.6,
+    "num_users": 119,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:04:08+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 102,
+    "num_users": 78,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:04:04+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 67.5,
+    "num_users": 47,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:03:58+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 67.5,
+    "num_users": 47,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:03:48+05:30",
+    "failure_probability_percent": 0.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 88.7,
+    "num_users": 112,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  },
+  {
+    "timestamp": "2026-10-20T09:03:38+05:30",
+    "failure_probability_percent": 5.0,
+    "predicted_failure": 0,
+    "threshold_percent": 10.0,
+    "power": 80.2,
+    "num_users": 94,
+    "avg_earth_ddt": 3.155602,
+    "max_earth_ddt": 6.6
+  }
+]

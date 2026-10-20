@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Transformer Digital Twin</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1120;color:#e2e8f0}
+header{padding:24px 6%;background:#111c30;border-bottom:1px solid #263650}
+header h1{margin:0 0 8px;color:#60a5fa}
+header p,.muted{color:#94a3b8}
+main{max-width:1100px;margin:auto;padding:25px 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:#142036;border:1px solid #263650;border-radius:14px;padding:20px;margin-bottom:18px}
+.card h2{font-size:17px;color:#cbd5e1}
+.metric{font-size:26px;font-weight:bold;margin:12px 0;overflow-wrap:anywhere}
+.status{color:#4ade80}
+label{display:block;margin:14px 0 7px}
+input{width:100%;padding:12px;background:#0b1120;color:white;border:1px solid #334155;border-radius:8px}
+button,.download-link{display:inline-block;padding:12px 15px;margin-top:10px;background:#2563eb;color:white;border:0;border-radius:8px;cursor:pointer;text-decoration:none}
+.action{display:block;width:100%}.start{background:#15803d}.stop{background:#b91c1c}
+.muted{font-size:13px;line-height:1.6}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}
+td,th{padding:10px;border-bottom:1px solid #263650}th{color:#93c5fd}
+#trendChart{width:100%;min-width:300px}
+footer{text-align:center;color:#64748b;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<h1>⚡ Smart Transformer Digital Twin</h1>
+<p>Predictive Failure Monitoring System</p>
+</header>
+<main>
+<div class="grid">
+<div class="card"><h2>System Status</h2><div class="metric status" id="systemStatus">Checking...</div><p class="muted">Flask API connection</p></div>
+<div class="card"><h2>Latest Failure Probability</h2><div class="metric" id="probability">--%</div><div style="height:12px;background:#263650;border-radius:8px;overflow:hidden"><div id="riskBar" style="height:100%;width:0;background:#22c55e"></div></div><p class="muted">Experimental model output</p></div>
+<div class="card"><h2>Risk Assessment</h2><div class="metric" id="risk">Not tested</div><p class="muted">Model threshold: 10%</p></div>
+</div>
+
+<div class="card">
+<h2>Transformer Parameters</h2>
+<p class="muted">Enter parameters for a model prediction.</p>
+<div class="grid">
+<div><label for="power">Power</label><input type="number" id="power" value="75" min="0" step="any"></div>
+<div><label for="num_users">Number of Users</label><input type="number" id="num_users" value="30" min="0" step="1"></div>
+<div><label for="avg_earth_ddt">Average Earth DDT</label><input type="number" id="avg_earth_ddt" value="3.155602" min="0" step="any"></div>
+<div><label for="max_earth_ddt">Maximum Earth DDT</label><input type="number" id="max_earth_ddt" value="6.6" min="0" step="any"></div>
+</div>
+<button class="action" id="predictButton" onclick="predictFailure()">Run Failure Prediction</button>
+<button class="action start" onclick="startLiveMonitoring()">Start Live Monitoring</button>
+<button class="action stop" onclick="stopLiveMonitoring()">Stop Live Monitoring</button>
+<p class="muted" id="monitoringStatus">Monitoring stopped. Readings are simulated.</p>
+<div id="result" aria-live="polite">Enter parameters and run a prediction.</div>
+</div>
+
+<div class="card">
+<h2>Failure Probability Trend</h2>
+<p class="muted">Latest 20 successful predictions. Simulated readings, not real sensor data.</p>
+<svg id="trendChart" viewBox="0 0 900 300" role="img" aria-label="Failure probability trend chart"></svg>
+<p class="muted" id="chartStatus">Waiting for predictions...</p>
+</div>
+
+<div class="card">
+<h2>About This System</h2>
+<p class="muted">This project uses a model trained on historical transformer data. Monitoring readings are simulated, not real sensor data. Predictions are experimental and require real-world validation.</p>
+</div>
+
+<div class="card">
+<h2>Prediction History</h2>
+<p class="muted">Latest transformer failure predictions.</p>
+<button onclick="loadHistory()">Refresh History</button>
+<a class="download-link" href="/history/download">Download History as CSV</a>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Time</th><th>Power</th><th>Users</th><th>Probability</th><th>Assessment</th></tr></thead>
+<tbody id="historyTable"><tr><td colspan="5">Loading history...</td></tr></tbody>
+</table>
+</div>
+</div>
+</main>
+<footer>Smart Transformer Digital Twin · Academic Project</footer>
+
+<script>
+let monitoringTimer = null;
+let predictionInProgress = false;
+
+async function checkStatus(){
+    const status=document.getElementById("systemStatus");
+    try{
+        const response=await fetch("/health");
+        if(!response.ok) throw new Error("Health check failed");
+        const data=await response.json();
+        status.textContent=data.status==="Running"&&data.model_loaded?"Connected":"Model unavailable";
+    }catch(error){
+        status.textContent="Disconnected";
+        console.error(error);
+    }
+}
+
+function renderTrendChart(history){
+    const chart=document.getElementById("trendChart");
+    const status=document.getElementById("chartStatus");
+    const items=history.filter(item=>Number.isFinite(Number(item.failure_probability_percent))).slice(-20);
+    if(!items.length){
+        chart.innerHTML='<text x="450" y="150" text-anchor="middle" fill="#94a3b8" font-size="18">Waiting for predictions...</text>';
+        status.textContent="Run a prediction to begin tracking.";
+        return;
+    }
+    const W=900,H=300,L=65,R=25,T=25,B=45;
+    const pw=W-L-R,ph=H-T-B;
+    const x=i=>items.length===1?L+pw/2:L+i*pw/(items.length-1);
+    const y=v=>T+(100-Math.max(0,Math.min(100,Number(v))))*ph/100;
+    let svg="";
+    [0,25,50,75,100].forEach(v=>{
+        svg+=`<line x1="${L}" y1="${y(v)}" x2="${W-R}" y2="${y(v)}" stroke="#334155"/>`;
+        svg+=`<text x="${L-10}" y="${y(v)+4}" text-anchor="end" fill="#94a3b8" font-size="13">${v}%</text>`;
+    });
+    const pts=items.map((item,i)=>`${x(i)},${y(item.failure_probability_percent)}`).join(" ");
+    svg+=`<polyline points="${pts}" fill="none" stroke="#60a5fa" stroke-width="3" stroke-linejoin="round"/>`;
+    items.forEach((item,i)=>{
+        const v=Number(item.failure_probability_percent);
+        svg+=`<circle cx="${x(i)}" cy="${y(v)}" r="5" fill="#60a5fa"><title>${v.toFixed(2)}%</title></circle>`;
+    });
+    svg+=`<text x="${W/2}" y="${H-8}" text-anchor="middle" fill="#94a3b8" font-size="13">Prediction sequence (oldest to latest)</text>`;
+    chart.innerHTML=svg;
+    status.textContent=`Showing ${items.length} predictions. Latest probability: ${Number(items[items.length-1].failure_probability_percent).toFixed(2)}%.`;
+}
+
+async function predictFailure(){
+    if(predictionInProgress)return;
+    const result=document.getElementById("result");
+    const power=document.getElementById("power").value;
+    const users=document.getElementById("num_users").value;
+    const avg=document.getElementById("avg_earth_ddt").value;
+    const max=document.getElementById("max_earth_ddt").value;
+    if([power,users,avg,max].some(v=>v.trim()==="")||[power,users,avg,max].some(v=>!Number.isFinite(Number(v))||Number(v)<0)){
+        result.textContent="Enter valid non-negative values in all four fields.";
+        return;
+    }
+    predictionInProgress=true;
+    document.getElementById("predictButton").disabled=true;
+    result.textContent="Running prediction...";
+    const data={
+        location:1,power:Number(power),self_protection:0,
+        avg_earth_ddt:Number(avg),max_earth_ddt:Number(max),
+        burning_rate:0,criticality_ceramics:0,removable_connectors:1,
+        num_users:Number(users),eens_kwh:1215,installation_type:0,
+        air_network:1,circuit_queue:0,network_km_lt:0.32362,year:2020,
+        client_type_COMERCIAL:0,client_type_HOUSEHOLD:1,
+        client_type_INDUSTRIAL:0,client_type_OFICIAL:0
+    };
+    try{
+        const response=await fetch("/predict",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(data)
+        });
+        const output=await response.json();
+        if(!response.ok)throw new Error(output.error||"Prediction failed");
+        const p=Number(output.failure_probability_percent);
+        if(!Number.isFinite(p))throw new Error("Invalid probability returned by API");
+        const probability=Math.max(0,Math.min(100,p));
+        document.getElementById("probability").textContent=probability.toFixed(2)+"%";
+        const bar=document.getElementById("riskBar");
+        bar.style.width=probability+"%";
+        bar.style.background=probability>=10?"#ef4444":probability>=5?"#f59e0b":"#22c55e";
+        document.getElementById("risk").textContent=output.predicted_failure?"Risk flagged":"Risk not flagged";
+        result.textContent=`Predicted failure probability: ${probability.toFixed(2)}%. Experimental model output only.`;
+        await loadHistory();
+    }catch(error){
+        result.textContent="Prediction error: "+error.message;
+        console.error("Prediction error:",error);
+    }finally{
+        predictionInProgress=false;
+        document.getElementById("predictButton").disabled=false;
+    }
+}
+
+function startLiveMonitoring(){
+    if(monitoringTimer!==null)return;
+    document.getElementById("monitoringStatus").textContent="Monitoring running. Readings are simulated.";
+    generateSimulatedReading();
+    monitoringTimer=setInterval(generateSimulatedReading,10000);
+}
+
+function generateSimulatedReading(){
+    if(predictionInProgress)return;
+    document.getElementById("power").value=(60+Math.random()*60).toFixed(1);
+    document.getElementById("num_users").value=Math.floor(20+Math.random()*100);
+    predictFailure();
+}
+
+function stopLiveMonitoring(){
+    if(monitoringTimer!==null)clearInterval(monitoringTimer);
+    monitoringTimer=null;
+    document.getElementById("monitoringStatus").textContent="Monitoring stopped. Readings are simulated.";
+}
+
+async function loadHistory(){
+    const table=document.getElementById("historyTable");
+    try{
+        const response=await fetch("/history");
+        if(!response.ok)throw new Error("Could not load history");
+        const history=await response.json();
+        if(!Array.isArray(history))throw new Error("Invalid history response");
+        renderTrendChart(history);
+        if(!history.length){
+            table.innerHTML='<tr><td colspan="5">No predictions yet.</td></tr>';
+            return;
+        }
+        table.innerHTML="";
+        history.slice().reverse().forEach(item=>{
+            const row=document.createElement("tr");
+            const p=Number(item.failure_probability_percent);
+            const values=[
+                item.timestamp?new Date(item.timestamp).toLocaleString():"Unknown",
+                item.power??"--",item.num_users??"--",
+                Number.isFinite(p)?p.toFixed(2)+"%":"--",
+                item.predicted_failure?"Risk flagged":"Risk not flagged"
+            ];
+            values.forEach(value=>{
+                const cell=document.createElement("td");
+                cell.textContent=value;
+                row.appendChild(cell);
+            });
+            table.appendChild(row);
+        });
+    }catch(error){
+        table.innerHTML='<tr><td colspan="5">Unable to load history. Check Flask.</td></tr>';
+        document.getElementById("chartStatus").textContent="Unable to load chart data. Check Flask.";
+        console.error("History error:",error);
+    }
+}
+
+checkStatus();
+loadHistory();
+</script>
+</body>
+</html>

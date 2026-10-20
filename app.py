@@ -1,7 +1,7 @@
+
 import csv
 from io import StringIO
-from flask import Response
-from flask import Flask, jsonify, request
+from flask import Response, Flask, jsonify, request
 import joblib
 import pandas as pd
 import json
@@ -15,24 +15,12 @@ model = joblib.load("transformer_model.pkl")
 HISTORY_FILE = "prediction_history.json"
 
 FEATURES = [
-    "location",
-    "power",
-    "self_protection",
-    "avg_earth_ddt",
-    "max_earth_ddt",
-    "burning_rate",
-    "criticality_ceramics",
-    "removable_connectors",
-    "num_users",
-    "eens_kwh",
-    "installation_type",
-    "air_network",
-    "circuit_queue",
-    "network_km_lt",
-    "year",
-    "client_type_COMERCIAL",
-    "client_type_HOUSEHOLD",
-    "client_type_INDUSTRIAL",
+    "location", "power", "self_protection", "avg_earth_ddt",
+    "max_earth_ddt", "burning_rate", "criticality_ceramics",
+    "removable_connectors", "num_users", "eens_kwh",
+    "installation_type", "air_network", "circuit_queue",
+    "network_km_lt", "year", "client_type_COMERCIAL",
+    "client_type_HOUSEHOLD", "client_type_INDUSTRIAL",
     "client_type_OFICIAL",
 ]
 
@@ -42,7 +30,6 @@ THRESHOLD = 0.10
 def load_history():
     if not os.path.exists(HISTORY_FILE):
         return []
-
     try:
         with open(HISTORY_FILE, "r", encoding="utf-8") as file:
             return json.load(file)
@@ -73,17 +60,15 @@ def health():
 def get_history():
     return jsonify(load_history())
 
+
 @app.route("/history/download", methods=["GET"])
 def download_history():
     history = load_history()
-
     if not history:
         return jsonify({"error": "No prediction history to download."}), 404
 
     output = StringIO()
-    fieldnames = list(history[0].keys())
-
-    writer = csv.DictWriter(output, fieldnames=fieldnames)
+    writer = csv.DictWriter(output, fieldnames=list(history[0].keys()))
     writer.writeheader()
     writer.writerows(history)
 
@@ -97,7 +82,6 @@ def download_history():
     )
 
 
-
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.get_json(silent=True)
@@ -108,7 +92,6 @@ def predict():
         }), 400
 
     missing = [feature for feature in FEATURES if feature not in data]
-
     if missing:
         return jsonify({
             "error": "Missing required features",

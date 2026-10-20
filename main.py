@@ -11,7 +11,7 @@ from sklearn.metrics import (
 )
 
 # 1. Load dataset
-file_path = r"C:\Users\DELL\OneDrive\Sunil files\Smart Transformer Digital Twin\data\df_entrenamiento_final.csv"
+file_path = r"C:\Users\DELL\OneDrive\Sunil files\Smart Transformer Digital Twin\Data\df_entrenamiento_final.csv"
 
 df = pd.read_csv(file_path)
 
@@ -37,7 +37,6 @@ y_train = train_df[target]
 X_test = test_df.drop(columns=[target])
 y_test = test_df[target]
 
-# Keep the exact feature order for the website
 feature_columns = X_train.columns.tolist()
 X_test = X_test[feature_columns]
 

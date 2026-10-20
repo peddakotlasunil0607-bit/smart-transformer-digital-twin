@@ -8,7 +8,7 @@ import json
 import os
 from datetime import datetime
 
-app = Flask(__name__, static_folder="static")
+app = Flask(__name__, static_folder="Static")
 
 model = joblib.load("transformer_model.pkl")
 
